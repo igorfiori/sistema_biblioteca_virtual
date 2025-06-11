@@ -17,6 +17,23 @@ O projeto foi estruturado em duas fases principais:
 
 ---
 
+## 🛠️ Estrutura do Projeto
+
+O projeto é composto por diversas classes Java, cada uma com uma responsabilidade específica dentro do sistema:
+
+- **`Main.java`**: Ponto de entrada da aplicação.
+- **`Livro.java`**: Representa a entidade livro, com seus respectivos atributos.
+- **`Usuario.java`**: Modela o usuário da biblioteca.
+- **`Emprestimo.java`**: Gerencia as informações sobre os empréstimos realizados.
+- **`GerenciadorBiblioteca.java`**: Centraliza as operações relacionadas ao acervo de livros.
+- **`GerenciadorUsuarios.java`**: Controla as operações relacionadas aos usuários do sistema.
+- **`InterfaceUsuario.java`**: Responsável pela interação com o usuário (interface de linha de comando ou gráfica).
+- **`ArvoreBinaria.java`** e **`NoArvore.java`**: Implementam a estrutura de dados de árvore binária para busca e organização dos dados.
+- **`GrafoRecomendacao.java`**: Implementa um grafo para o sistema de recomendação de livros.
+- **`HistoricoNavegacao.java`**: Armazena o histórico de interações do usuário.
+
+---
+
 ## ✨ Funcionalidades e Diferenciais
 
 O sistema foi arquitetado para ser mais do que um gerenciador de biblioteca, focando em um mecanismo de sugestão de alta performance:
@@ -67,3 +84,7 @@ public static Map<Livro, Integer> djikstraSimples(HashMap<Livro, Set<Livro>> gra
     return distancias;
 }
 ```
+Essa implementação permite que, ao selecionar um livro, o sistema não apenas mostre as duas recomendações diretas, mas também as recomendações das recomendações, criando uma cadeia de descoberta muito mais rica e precisa.
+
+---
+
